@@ -1,8 +1,15 @@
 #include <stdio.h>
-#include "list_directories.c"
+#include "directories_list.c"
 
-int main(){
+int main(int argc, char **argv){
 
-readDirectory("/");
+if(strcmp(argv[1],"")==0||argv[1]==NULL){
+	printf("Verzeichnis nicht gefunden");
+}else{
+readDirectory("/home/pi");
 
+
+}
+
+return 0;
 }

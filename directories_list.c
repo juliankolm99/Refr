@@ -1,7 +1,5 @@
 #include "directories_list.h"
-
 #include <dirent.h>
-
 #include <string.h>
 
 void readDirectory(char *path){
@@ -12,9 +10,7 @@ printf("reading directory: %s\n", path);
 printf("----------------------------\n");
 
 DIR *d;
-
 struct dirent *dir;
-
 d=opendir(path);
 
 if(d){
